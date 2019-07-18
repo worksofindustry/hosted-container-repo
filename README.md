@@ -23,12 +23,17 @@ To push images hosted locally, first tag it correct remote repository using the 
 $ docker tag 13c9f1285025 docker-registry:5000/busybox
 ```
 
+![Alt Text](media/docker-tag.png)
+
+
 With the image now tagged you are ready to push using the following syntax:
 	docker push registry_server_name_or_ip:port/your_image_name:tag_if_you_got_one
 
 ```bash
 $ docker push docker-registry:5000/busybox:1.0
 ```
+
+![Alt Text](media/docker-push.png)
 
 To pull images from the repo just do the following
 
