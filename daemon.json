@@ -1,0 +1,4 @@
+{
+ "debug": true,
+ "insecure-registries": ["hpcc-u16-01:5000"]
+}
