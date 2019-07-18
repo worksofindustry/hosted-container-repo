@@ -1,20 +1,21 @@
 ## Installation
 To access our locally hosted container registry, make the following configuration changes to your linux client machine.
 
-**STEP 1**:  Depending on your distro of Docker the daemon.json configuration file will be contained in either: /etc/docker or /var/lib/docker. If not use the one contained in the repo as a template.
+**STEP 1**:  Depending on the distribution of Docker that you are using the daemon.json configuration file can be found 
+in either: /etc/docker or /var/lib/docker. If not use the one contained in the repo as a template.
 
 ```bash
 # cp daemon.json /etc/docker/daemon.json
 ```
 
-**STEP 2**: Now for the changes to take affect restart docker running the following command as root.
+**STEP 2**: Now to apply the configuration restart docker by running the following commands as root.
 
 ```bash
 # systemctl daemon-reload && systemctl restart docker
 ```
 
 ## How to use
-Now that your machine is configured, you can now push and pull images from the registry.
+Now that your machine is configured, you are now ready to push and pull images from the registry.
 
 To push images hosted locally, first tag it correct remote repository using the following form:
 	docker tag <container image id> registry_server_name_or_ip:port/your_image_name:tag_if_you_got_one
