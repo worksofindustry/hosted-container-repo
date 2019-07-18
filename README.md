@@ -2,7 +2,7 @@
 To access our locally hosted container registry, make the following configuration changes to your linux client machine.
 
 **STEP 1**:  Depending on the distribution of Docker that you are using the daemon.json configuration file can be found 
-in either: /etc/docker or /var/lib/docker. If not use the one contained in the repo as a template.
+in either: /etc/docker or /var/lib/docker. If not, then use the one contained in the repo as a template.
 
 ```bash
 # cp daemon.json /etc/docker/daemon.json
