@@ -14,7 +14,7 @@ in either: /etc/docker or /var/lib/docker. If not use the one contained in the r
 # systemctl daemon-reload && systemctl restart docker
 ```
 
-## How to use
+## How To Use
 Now that your machine is configured, you are now ready to push and pull images from the registry.
 
 To push images hosted locally, first tag it correct remote repository using the following form:
